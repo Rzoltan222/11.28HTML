@@ -2,6 +2,76 @@ body{
     background-color: bisque;
     margin: 20px;
 }
+
+#header{
+    grid-area: header;
+    background-color: rgba(104, 104, 104, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 30px;
+    
+}
+#nav{
+    grid-area: nav;
+    background-color: rgba(105, 105, 105, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 30px;
+    
+}
+#content{
+    grid-area: content;
+    background-color: rgba(105, 105, 105, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+#aside{
+    grid-area: aside;
+    background-color: rgba(104, 104, 104, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+#sidebar{
+    grid-area: sidebar;
+    background-color: rgba(104, 104, 104, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+#footer{
+    grid-area: footer;
+    background-color: rgba(104, 104, 104, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 30px;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(78, 53, 136);
+    padding: 10px;
+    grid-template-areas:
+    "header header ..." 
+    "nav content aside"
+    "nav content sidebar"
+    "footer footer footer";
+    
+}
+
 /* csökkenő sorrend, csak változást jelenitsd meg */
 @media all and (max-width: 1200px){
     body{
@@ -20,8 +90,22 @@ body{
 @media all and (max-width: 500px){
     body{
         background-color: rgb(100, 14, 1);
+        
         color: white;
     }
-    
+    #wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(78, 53, 136);
+        padding: 20px;
+        grid-template-areas:
+        "header" 
+        "nav"
+        "content"
+        "aside"
+        "sidebar"
+        "footer";
+        
+    }
     
 }
