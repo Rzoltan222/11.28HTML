@@ -1,4 +1,27 @@
 body{
     background-color: bisque;
+    margin: 20px;
+}
+/* csökkenő sorrend, csak változást jelenitsd meg */
+@media all and (max-width: 1200px){
+    body{
+        background-color: rgb(174, 114, 41);
+    }
+    
+    
+}
+@media all and (max-width: 800px){
+    body{
+        background-color: rgb(123, 76, 19);
+    }
+    
+    
+}
+@media all and (max-width: 500px){
+    body{
+        background-color: rgb(100, 14, 1);
+        color: white;
+    }
+    
     
 }
